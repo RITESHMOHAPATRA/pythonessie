@@ -1,6 +1,5 @@
 #!/usr/bin/python2.7
 from time import sleep
-import sys
 
 import sys
 
@@ -101,10 +100,10 @@ if __name__ == "__main__":
         while curProgress <= count:
             pb.setAndPlot(curProgress)
             curProgress += 1
-            time.sleep(.5)
+            time.sleep(1)
         del pb
         print 'Loaded!',
-        sleep(.5)
+        sleep(1)
         congrats()
     else:
         print'Oh, sorry, then happy no-birthday :D'
